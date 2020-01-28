@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guessing Game 1 - 100</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        var num = Math.ceil(Math.random() * 100);
+        for (var count = 1; count <= 10; count++)
+        {
+            var numIn = Number(prompt("Please enter guess number " + count + ":"));
+            if (numIn == num){
+                alert("Congratulations, you guessed " + num + " correctly in " + count + " guesses!");
+                break;
+            }
+            else{
+                if(numIn > num){
+                    alert("Guess too high!");
+                }
+                else{
+                    alert("Guess too low!");
+                }
+            }
+        }
+        if(count = 10 && numIn != num){
+            alert("Hard luck, the number you were looking for was " + num + "!");
+        }
+    </script>
+</html>

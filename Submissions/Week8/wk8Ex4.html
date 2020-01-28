@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 8 - Exercise 4</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        Number 1: <input id="in1"><br><br>
+        Number 2: <input id="in2"><br><br>
+        
+        <button onclick="addNums()">Add</button>
+        <button onclick="subtNums()">Subtract</button>
+        <button onclick="multNums()">Multiply</button>
+        <button onclick="divNums()">Divide</button>
+        <button onclick="binNum()">Binary</button>
+        <button onclick="hexNum()">Hexadecimal</button><br>
+        <h3 id="result"></h3>
+    </body>
+    <script>
+        function addNums(){
+            var x = Number(document.getElementById('in1').value);
+            var y = Number(document.getElementById('in2').value);
+            document.getElementById("result").innerHTML="Answer: " + x + " plus " + y + " = " + (x + y);
+        }
+        
+        function subtNums(){
+            var x = Number(document.getElementById('in1').value);
+            var y = Number(document.getElementById('in2').value);
+            document.getElementById("result").innerHTML="Answer: " + x + " minus " + y + " = " + (x - y);
+        }
+        
+        function multNums(){
+            var x = Number(document.getElementById('in1').value);
+            var y = Number(document.getElementById('in2').value);
+            document.getElementById("result").innerHTML="Answer: " + x + " multiplied by " + y + " = " + (x * y);
+        }
+        
+        function divNums(){
+            var x = Number(document.getElementById('in1').value);
+            var y = Number(document.getElementById('in2').value);
+            document.getElementById("result").innerHTML="Answer: " + x + " divided by " + y + " = " + (x / y);
+        }
+        
+        function binNum(){
+            var x = Number(document.getElementById('in1').value);
+            document.getElementById("result").innerHTML="Answer: " + x + " in Binary is " + x.toString(2);
+        }
+        
+        function hexNum(){
+            var x = Number(document.getElementById('in1').value);
+            document.getElementById("result").innerHTML="Answer: " + x + " in Hexadecimal is " + x.toString(16);
+        }
+    </script>
+</html>

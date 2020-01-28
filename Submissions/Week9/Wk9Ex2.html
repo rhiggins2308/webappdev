@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 9 - Exercise 2</title>
+    </head>
+    <body id="bdy">
+        <input type = "color" id= "colpick"><button onclick="changeBackground()">Change background</button>
+    </body>
+    <script>
+        function changeBackground(){
+            var myColour = document.getElementById("colpick").value;
+            document.getElementById("bdy").style.background = myColour;
+        }
+    </script>
+</html>

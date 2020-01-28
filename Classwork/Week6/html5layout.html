@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="myStylesheet.css">
+		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+		<title>HTML5 Layout</title>
+    </head>
+<body>
+	<div class="wrapper">
+	
+		<!--HEADER-->
+		<header>
+			<h1 class="siteName">My Website</h1>
+			<!--Navigation: Menu Items created as list items in an unordered list-->
+			<nav>
+				<ul>
+					<li><a href=""> - HOME - </a></li>
+					<li><a href=""> - HTML - </a></li>
+					<li><a href=""> - CSS - </a></li>
+					<li><a href=""> - JavaScript - </a></li>
+					<li><a href=""> - ABOUT - </a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--Section Start for left panel, this contains 2 articles-->		
+		<section class="courses">
+			<!--First Article-->		
+			<article>
+					<figure>
+						<img src="images/computing.jpg" alt="Computing" />
+						<figcaption>Computer Networking</figcaption>
+					</figure>
+					<h2>Computer Networking</h2>
+					<h3>Getting Connected</h3>
+					<p>A computer network or data network is a telecommunications network which allows nodes to share resources. Networked computing devices exchange data with each other using a data link.</p>
+			</article>
+			
+			<!--Second Article-->		
+			<article>
+				<figure>
+					<img src="images/oop.jpg" alt="OOP" />
+					<figcaption>Object Oriented Programming</figcaption>
+				</figure>
+				<h2>OOP</h2>
+				<h3>Object Oriented Programming</h3>
+				<p>Object-oriented programming (OOP) refers to a type of computer programming (software design) in which programmers define not only the data type of a data structure, but also the types of operations that can be applied to data structure.</p>
+			</article>    
+		</section>
+		
+		<!--Side panel created using "aside" tag-->			
+		<aside>
+			<section>
+				<h2>Useful Links</h2>
+				<a href="">The World Wide Web</a>
+				<a href="">Arpanet</a>
+				<a href="">Tim Berners Lee</a>
+				<a href="">WiFi</a>
+				<a href="">W3C.org</a>
+			</section>
+		
+			<section>
+				<h2>Contact</h2>
+				<p>Dublin Road<br />
+				Galway<br />
+				Ireland<br />		
+				</p>
+			</section>
+		</aside>
+
+		<!--Side panel created using "aside" tag-->					
+		<footer>&copy; 2017 ABC Website</footer>
+	
+	</div>
+</body>
+</html>

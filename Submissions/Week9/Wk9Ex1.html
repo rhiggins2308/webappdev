@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 9 - Exercise 1</title>
+    </head>
+    <body id="bdy">
+        <h1 id="head1">Connacht Rugby</h1>
+        <h2><marquee id="scroll1">PRO12 Champions 2015/16</marquee></h2>
+        
+        <button onclick="changeHead()">Change Header</button><button onclick="changeScroll()">Change Marquee</button><button onclick="changeBack()">Change Background to:</button><input id="backCol">
+    </body>
+    <script>
+        function changeHead(){
+            var myHead = document.getElementById("head1");
+            
+            myHead.style.backgroundColor = "green";
+            myHead.style.color = "white";
+            myHead.style.textAlign = "center";
+        }
+        
+        function changeScroll(){
+            var scrollDir = document.getElementById("scroll1").innerHTML = "The ONLY Irish province to win a trophy since 2014";
+        }
+        
+        function changeBack(){
+            document.getElementById("bdy").style.backgroundColor = document.getElementById("backCol").value;
+        }
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Style</title>
+    </head>
+    <body id="bdy">
+        <h1 id="one">This is a heading</h1>
+        <button onclick="changeHead()">Change heading to red</button>
+        <button onclick="changeBackground()">Change background</button>
+    </body>
+    <script>
+        function changeHead(){
+            var headr = document.getElementById("one");
+            
+            headr.style.color = "red";
+            headr.style.border = "3px dashed red";
+            headr.style.fontFamily = "Arial";
+            headr.style.boxShadow = "10px 20px 30px grey";
+        }
+        
+        function changeBackground(){
+            document.getElementById("bdy").style.background = "yellow";
+        }
+    </script>
+</html>

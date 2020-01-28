@@ -1,0 +1,92 @@
+body{
+	background-image: url("images/background.jpg");
+	background-position: center;}
+			
+.wrapper {
+	width: 940px;
+	margin: 20px auto 20px auto;
+	border: 6px solid white;
+	background-color: darkgrey;}
+					
+header {
+	height: 160px;
+	background-image: url("images/headimage.jpg");}
+						
+nav, footer {
+	clear: both;
+	color: white;
+	background-color: lightgrey;
+	height: 45px;}
+			
+nav li {
+	display: inline;}
+			
+nav li a {
+	color: #ffffff;}
+					
+nav li a:hover {
+	color: white;
+	background-color: black;}
+			
+nav ul {
+	margin: 0px;
+	padding: 10px 0px 5px 20px;}		
+			
+a {
+	color: #154abe;
+	text-decoration: none;
+	background-color: rgba(255,255,255,0.25);
+	padding: 3px;}
+					
+ul a {
+	border-radius: 12px;
+	box-shadow: 5px 5px 10px black;}		
+				
+h1 {
+	width: 940px;
+	height: 105px;
+	margin: 0px;}
+					
+.siteName {
+	color: white;
+	font-family: 'Alfa Slab One', cursive;
+	text-shadow: 5px 5px 8px black;
+	text-align: left;
+	font-size: 3.5em;
+	text-indent: 35px;
+	padding-top: 25px;						}
+			
+section.courses {
+	margin: 15px 0px 0px 0px;
+	float: left;
+	width: 659px;
+	border-right: 1px solid #eeeeee;}
+					
+article {	
+	clear: both;
+	overflow: auto;
+	width: 100%;}
+					
+figure {
+	float: left;
+	width: 290px;
+	height: 220px;
+	padding: 5px;
+	margin: 20px;
+	border: 1px solid #eeeeee;}
+
+aside {
+	width: 230px;
+	float: left;
+	padding: 25px;
+	text-align: center;}
+			
+aside section a {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #eeeeee;
+	text-align: center;}
+				
+aside section a:hover {
+	color: #985d6a;
+	background-color: #efefef;}

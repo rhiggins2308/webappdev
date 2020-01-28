@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        
+        <title>User Log In</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    </head>
+    <body>    
+        <div class="container">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                            
+                            <li><a href="appointments.html">Appointments</a></li>
+                            
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Competitions <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="wip.html">Age Grade and Schools</a></li>
+                                    <li><a href="wip.html">Junior Cup</a></li>
+                                    <li><a href="wip.html">Ulster Bank League</a></li>
+                                    <li><a href="wip.html">Womens Rugby</a></li>
+                                    <li><a href="wip.html">Colleges Rugby</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Technical Info</li>
+                                    <li><a href="rolling-subs.html">Subs and Rolling Subs</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Useful Info <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">Welfare</li>
+                                    <li><a href="wip.html">Player Welfare</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">World Rugby</li>
+                                    <li><a href="wip.html">World Rugby Laws Website</a></li>
+                                    <li><a href="wip.html">World Rugby Equipment Approval</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">ARCB Information</li>
+                                    <li><a href="wip.html">Red Card Report Examples</a></li>
+                                    <li><a href="wip.html">Technical Zones</a></li>
+                                    <li><a href="wip.html">Fitness</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documents <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="wip.html">Expenses</a></li>
+                                    <li><a href="wip.html">International Tickets</a></li>
+                                    <li><a href="wip.html">Red Card Forms</a></li>
+                                    <li><a href="wip.html">ARCB Coaching Report Form </a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="wip.html">Store</a></li>
+                        </ul>
+                                            
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="authenticate.html">Log In <span class="sr-only">(current)</span></a></li>
+                            <li><a href="wip.html">Contacts</a></li>
+                        </ul>
+                </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+            </nav>
+
+            <!-- Main component for a primary marketing message or call to action -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                    <center>
+                        <img src="images/ARCB-Header1-700x259.jpg"/>
+                    </center>
+                </div>
+                
+                <div class="container float-left">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button onclick="checkBlank()" type="submit" class="btn btn-lg btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- /container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+    
+    <script>
+        function checkBlank(){
+            var x = document.getElementById('exampleInputEmail1').value;
+            var y = document.getElementById('exampleInputPassword1').value;
+            
+            if (x == "" || y == ""){
+                alert("Please ensure that both fields are not blank.");
+            }
+        }
+    </script>
+</html>
